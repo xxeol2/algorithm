@@ -1,0 +1,11 @@
+<int 범위 초과 자료형 : long long>
+ex) boj6198
+
+int
+signed int	4바이트, 32비트	-2,147,483,648~ 2,147,483,647	
+
+long long 
+long long int 
+signed long long 
+signed long long int	8바이트, 64비트	-9,223,372,036,854,775,808~
+9,223,372,036,854,775,807
