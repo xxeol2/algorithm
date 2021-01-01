@@ -1,5 +1,6 @@
-stack <pair<int,int>> s;
+ex ) boj6198
 
+stack <pair<int,int>> s;
 s.push({1,2})
 
 // s.top().first == 1
