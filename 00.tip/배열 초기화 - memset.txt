@@ -1,0 +1,2 @@
+memset(arr, 0, sizeof(arr)); //0으로 초기화
+memeset(arr, -1, sizeof(arr)); //-1로 초기화
