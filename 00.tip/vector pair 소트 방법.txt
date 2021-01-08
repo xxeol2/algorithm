@@ -1,0 +1,20 @@
+vector pair 소트 방법
+vector<pair<int,int>>v; 소트 방법
+
+< : 오름차순
+> : 내림차순
+
+sort(v.begin(),v.end())
+
+first 기준
+
+bool cmp(const pair<int, int> &a, const pair<int, int> &b)
+{
+    return a.first < b.first;
+}
+second 기준
+
+bool cmp(const pair<int, int> &a, const pair<int, int> &b)
+{
+    return a.second < b.second;
+}

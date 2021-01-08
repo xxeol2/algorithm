@@ -1,0 +1,18 @@
+bool arr 초기화 방법
+bool arr[5] = {false}; : false로 초기화
+-> 이 방법으로는 true로 초기화 할 수 없다.
+
+<input>
+
+    bool arr1[5] = { true };
+    bool arr2[5] = { false };
+    for (int i = 0; i < 5; i++)
+        cout << arr1[i] << " ";
+    cout << "\n";
+    for (int i = 0; i < 5; i++)
+        cout << arr2[i] << " ";
+<output>
+1 0 0 0 0
+0 0 0 0 0
+
+fill_n(arr, n, true); : true로 초기화
