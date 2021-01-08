@@ -1,0 +1,20 @@
+### for문 조건 속 변수 변하지 않게 조심!
+이게 무슨말이냐 하면..
+```cpp
+for (int i = 1; i < vec.size(); i++) {
+            if (vec[i].first < vec[idx].second)
+                vec.erase(vec.begin() + i);
+        }
+```
+위와 같은 경우에, vec의 요소가 하나씩 줄어들면서 vector의 사이즈가 바뀐다 -> **ERROR**
+그걸 방지하기 위해서
+```cpp
+int sz = vec.size();
+for (int i = 1; i < sz; i++) {
+            if (vec[i].first < vec[idx].second)
+                vec.erase(vec.begin() + i);
+        }
+```
+이렇게 sz로 바꿔줬는데도, **ERROR**가 떴다.
+그 이유는 vector의 요소들이 erase 되면서 더이상 vec[i] 가 vec[i]가 아니게된것..!
+**지워질 때 마다 그 뒤부터 idx 하나 씩 땡겨진다**
